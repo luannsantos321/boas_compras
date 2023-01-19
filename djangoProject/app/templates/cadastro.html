@@ -1,0 +1,19 @@
+    {% extends 'master.html' %}
+
+
+        {% load static %}
+
+        <link rel="stylesheet" href="{% static '\css\cadastro.css' %}">
+            {% block title %}Cadastro de itens {% endblock %}
+
+            {% block content %}
+                {% include 'titulo.html' %}
+                <div class="cadastro">
+                    <h2>Cadastre</h2>
+                    <form action="." method="POST">{% csrf_token %}
+                        {{ form }}
+                        <button type="submit">Enviar</button>
+                        <button type="button"><a href="{% url 'inicio' %}">Cancelar</a></button>
+                    </form>
+                </div>
+            {% endblock %}

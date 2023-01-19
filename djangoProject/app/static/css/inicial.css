@@ -1,0 +1,12 @@
+
+a{
+    text-decoration: none;
+    color: #8c8c8c;
+}
+.inicial{
+    color: #8c8c8c;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+}

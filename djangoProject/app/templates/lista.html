@@ -1,0 +1,29 @@
+    {% extends 'master.html' %}
+
+        {% load static %}
+
+        <link rel="stylesheet" href="{% static '\css\lista.css' %}">
+            {% block title %}Lista de itens {% endblock %}
+
+            {% block content %}
+                {% include 'titulo.html' %}
+                <div class="pag_lista">
+                    <h2>Lista</h2>
+                    <a href="{% url 'cadastro' %}">Novo item</a>
+                    <a href="{% url 'inicio' %}">Página inicial</a>
+                    <button><a href="{% url 'delete_lista' %}">Deletar toda a lista</a></button>
+                    <ol>
+                        {% for lista in lista %}
+                           <li>
+                               <a href="{% url 'update_lista' lista.id %}">
+                                   {{ lista }}
+                               </a>
+                                <button type="button">
+                                    <a href="{% url 'delete_id_lista' lista.id %}">Deletar</a>
+                                </button>
+                           </li>
+                        {% endfor %}
+                    </ol>
+                </div>
+    {% endblock %}
+
