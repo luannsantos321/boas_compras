@@ -1,4 +1,6 @@
-
+body{
+    background-color: blue;
+}
 a{
     text-decoration: none;
     color: #8c8c8c;
@@ -8,5 +10,6 @@ a{
     display: flex;
     flex-flow: column;
     align-items: center;
+
 
 }

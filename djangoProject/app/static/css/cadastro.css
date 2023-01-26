@@ -2,8 +2,7 @@ body{
      background-color: #003785;
 }
 h1{
-  text-align: center;
-     color: #8c8c8c;
+    text-align: center;
 }
 .cadastro{
      display: flex;
@@ -12,6 +11,6 @@ h1{
      border: solid #8c8c8c 2px;
      border-radius: 20px;
      padding: 50px 0 50px 0;
-     margin: 300px 500px;
+     margin: 500px;
      color: #8c8c8c;
 }

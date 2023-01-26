@@ -14,10 +14,13 @@ def cadastro(request):
         return redirect('lista')
     return render(request,'cadastro.html', {'form':form})
 
+
 def lista(request):
     lista = Produto.objects.all()
-    dados = {'lista':lista}
-    return render(request,'lista.html', dados)
+    preco = request.POST.get('preco')
+    dados = {'lista': lista, 'preco': preco}
+    return render(request, 'lista.html', dados)
+
 def update_lista(request, id):
     lista = Produto.objects.get(id=id)
     form = ProdutoForm(request.POST or None, instance=lista)
