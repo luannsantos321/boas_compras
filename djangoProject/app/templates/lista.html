@@ -19,22 +19,20 @@
                                <a href="{% url 'update_lista' lista.id %}">
                                    {{ lista }}
                                </a>
-                               <form action="{% url 'lista'%}" method="POST">{%csrf_token%}
+                               <form action="." method="POST">{%csrf_token%}
                                    Preço: <input type="number" name="preco">
 
                                 <button type="button">
                                     <a href="{% url 'delete_id_lista' lista.id %}">Deletar</a>
                                 </button>
+                                   <input type="submit">
+                               </form>
+                                {{preco}}
                            </li>
                         {% endfor %}
-                            <input type="submit">
-                         </form>
                     </ol>
 
-                    {% for y in preco %}
-                        <p>{{y}}</p>
-                    {% endfor %}
-
                 </div>
+
     {% endblock %}
 

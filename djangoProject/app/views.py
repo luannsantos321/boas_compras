@@ -15,9 +15,11 @@ def cadastro(request):
     return render(request,'cadastro.html', {'form':form})
 
 
+
 def lista(request):
-    lista = Produto.objects.all()
     preco = request.POST.get('preco')
+
+    lista = Produto.objects.all()
     dados = {'lista': lista, 'preco': preco}
     return render(request, 'lista.html', dados)
 
