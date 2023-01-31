@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista</title>
+</head>
+<body>
+<ol>
+    {%for lista in lista%}
+     <li>
+         <a href="{%url 'update_produto' lista.id %}">{{lista}}</a>
+     </li>
+    {%endfor%}
+  </ol>
+</body>
+</html>
