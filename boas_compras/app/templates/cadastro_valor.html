@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cadastro</title>
+    <title>Valor</title>
 </head>
 <body>
   <form method="POST">{%csrf_token%}
-    {{form.as_p}}
-    <button type="submit">Enviar</button>
-    <button type="button">Cancelar</button>
-
+    {{form2.as_p}}
+          <button type="submit">Enviar</button>
+          <button type="button">Cancelar</button>
   </form>
 </body>
 </html>

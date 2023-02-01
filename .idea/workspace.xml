@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef4b188a-9caa-43c3-9d04-c9ff185dcd0e" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/boas_compras/app/templates/entrada_valores.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boas_compras/app/templates/valor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boas_compras/app/templates/cadastro_valor.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boas_compras/app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/boas_compras/app/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boas_compras/app/templates/cadastro.html" beforeDir="false" afterPath="$PROJECT_DIR$/boas_compras/app/templates/cadastro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boas_compras/app/templates/entrada_valores.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/boas_compras/app/templates/lista.html" beforeDir="false" afterPath="$PROJECT_DIR$/boas_compras/app/templates/lista.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boas_compras/app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/boas_compras/app/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boas_compras/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/boas_compras/app/views.py" afterDir="false" />
