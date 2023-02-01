@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
-from .models import Produto
-from .forms import ProdutoForm
+from .models import Produto,Valor
+from .forms import ProdutoForm, ValorForm
 # Create your views here.
 def inicio(request):
     return render(request, 'inicio.html')
@@ -32,4 +32,18 @@ def delete_produto(request, id):
 
     if request.method == 'POST':
         lista.delete()
-    return render(request, 'lista.html', {'lista': lista})
+        return redirect('lista')
+    return render(request, 'cadastro.html')
+
+def delete_produto_all(request):
+    lista = Produto.objects.all()
+
+    if request.method == 'POST':
+        lista.delete()
+        return redirect('lista')
+    return render(request, 'cadastro.html')
+
+
+
+
+

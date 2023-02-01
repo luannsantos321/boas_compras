@@ -5,12 +5,26 @@
     <title>Lista</title>
 </head>
 <body>
-<ol>
-    {%for lista in lista%}
-     <li>
-         <a href="{%url 'update_produto' lista.id %}">{{lista}}</a>
-     </li>
-    {%endfor%}
-  </ol>
+    <a href="{%url 'delete_produto_all'%}">Deletar Lista</a>
+    <a href="{%url 'cadastro'%}">Novo item</a>
+    <ol>
+        {%for lista in lista%}
+             <li>
+                 <input type="checkbox">
+                 <a href="{%url 'delete_produto' lista.id%}">Delete</a>
+                 <a href="{%url 'update_produto' lista.id %}">{{lista}}</a>
+                <a href="{%url 'entrada_valores' %}">Valor:</a>
+             </li>
+        {%endfor%}
+      </ol>
+
+    <ul>
+{%for valor in valor%}
+  <li>
+    R${{valor.valor}}
+    <a href="{% url 'delete_valor' valor.id%}">Deletar</a>
+  </li>
+{%endfor%}
+</ul>
 </body>
 </html>
