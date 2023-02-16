@@ -1,6 +1,6 @@
 from django.urls import path
 from .views import inicio, lista, cadastro, \
-    update_produto, delete_produto, delete_produto_all, cadastro_valor,delete_valor, soma
+    update_produto, delete_produto, delete_produto_all, cadastro_valor,delete_valor
 urlpatterns = [
     path('', inicio, name='inicio'),
     path('lista/', lista,  name='lista'),
@@ -10,5 +10,5 @@ urlpatterns = [
     path('delete_produto_all/', delete_produto_all, name='delete_produto_all'),
     path('cadastro_valor/', cadastro_valor, name='cadastro_valor'),
     path('delete_valor/<int:id>/', delete_valor, name='delete_valor'),
-    path('soma/', soma,  name='soma'),
+
 ]

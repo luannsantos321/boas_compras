@@ -12,8 +12,10 @@ class Produto(models.Model):
 
 
 class Valor(models.Model):
-    valor = models.DecimalField(max_digits=7, decimal_places=2,verbose_name='Valor')
+    valor = models.DecimalField(max_digits=7,decimal_places=2,verbose_name='Valor')
 
     class Meta:
         db_table = 'valor'
 
+    def __str__(self):
+        return '{:.2f}'.format(float(self.valor))
