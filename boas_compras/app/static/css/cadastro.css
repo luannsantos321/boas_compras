@@ -1,0 +1,22 @@
+body{
+    background-color: #2ef8a0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 100px 500px;
+
+
+}
+
+.button{
+    display: flex-inline;
+    flex-direction: row;
+    justify-content: space-arround;
+    aling-item: center;
+
+}
+.formulario{
+     padding: 20px;
+}

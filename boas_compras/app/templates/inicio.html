@@ -1,15 +1,21 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/inicio.css' %}">
     <title>Home</title>
 </head>
 <body>
-    {% content block %}
+<div class="inicio">
+
+    <h1>Boas Compras</h1>
+    <div class="cadastro">
         <a href="{% url 'cadastro' %}">Cadastre um item</a>
-        <a href="{% url 'lista' %}">Veja sua lista</a>
-    {% endblock %}
+    </div>
+    <div class="lista">
+       | <a href="{% url 'lista' %}">Veja sua lista</a>
+    </div>
+</div>
 </body>
 </html>
