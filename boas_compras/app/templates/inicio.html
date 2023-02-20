@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     {% load static %}
+    {% load bootstrap5 %}
     <meta charset="UTF-8">
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
     <link rel="stylesheet" href="{% static 'css/inicio.css' %}">
     <title>Home</title>
 </head>
@@ -10,11 +13,13 @@
 <div class="inicio">
 
     <h1>Boas Compras</h1>
-    <div class="cadastro">
-        <a href="{% url 'cadastro' %}">Cadastre um item</a>
-    </div>
-    <div class="lista">
-       | <a href="{% url 'lista' %}">Veja sua lista</a>
+    <div class="links">
+        <div class="cadastro">
+            <a href="{% url 'cadastro' %}">Cadastre um item</a>
+        </div>
+        <div class="lista">
+            <a href="{% url 'lista' %}">Veja sua lista</a>
+        </div>
     </div>
 </div>
 </body>

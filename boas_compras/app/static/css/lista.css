@@ -1,0 +1,29 @@
+body{
+    background-color: #2ef8a0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+.links{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 30px;
+
+    text-align: center
+}
+.lista{
+     display:flex;
+     flex-direction: row;
+     box-shadow: 3px 3px 5px 5px #474b4e;
+     margin: 100px 500px 30px 500px;
+}
+.total{
+
+     box-shadow: 3px 3px 5px 5px #474b4e;
+     margin: 30px 500px;
+     width: 100px;
+}

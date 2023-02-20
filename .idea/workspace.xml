@@ -4,13 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef4b188a-9caa-43c3-9d04-c9ff185dcd0e" name="Changes" comment="aggregate values">
-      <change afterPath="$PROJECT_DIR$/boas_compras/app/static/css/cadastro.css" afterDir="false" />
+    <list default="true" id="ef4b188a-9caa-43c3-9d04-c9ff185dcd0e" name="Changes" comment="adicionado valor na lista">
+      <change afterPath="$PROJECT_DIR$/boas_compras/app/static/css/cadastro_valor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boas_compras/app/static/css/inicio.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boas_compras/app/static/css/lista.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boas_compras/app/templates/resultado.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boas_compras/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/boas_compras/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boas_compras/app/static/css/cadastro.css" beforeDir="false" afterPath="$PROJECT_DIR$/boas_compras/app/static/css/cadastro.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boas_compras/app/templates/cadastro.html" beforeDir="false" afterPath="$PROJECT_DIR$/boas_compras/app/templates/cadastro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boas_compras/app/templates/cadastro_valor.html" beforeDir="false" afterPath="$PROJECT_DIR$/boas_compras/app/templates/cadastro_valor.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boas_compras/app/templates/inicio.html" beforeDir="false" afterPath="$PROJECT_DIR$/boas_compras/app/templates/inicio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boas_compras/app/templates/master.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/boas_compras/app/templates/lista.html" beforeDir="false" afterPath="$PROJECT_DIR$/boas_compras/app/templates/lista.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boas_compras/app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/boas_compras/app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boas_compras/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/boas_compras/app/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boas_compras/boas_compras/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/boas_compras/boas_compras/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boas_compras/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/boas_compras/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +42,6 @@
       </GitPushTagMode>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -43,22 +51,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Joao/Desktop/boas_compras/venv&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/luannderackel/boas_compras",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Joao\Desktop\boas_compras\boas_compras\app\static\css" />
-      <recent name="C:\Users\Joao\Desktop\boas_compras\boas_compras" />
-      <recent name="C:\Users\Joao\Desktop\boas_compras\boas_compras\app" />
+      <recent name="$PROJECT_DIR$/boas_compras/app/static/css" />
       <recent name="C:\Users\Joao\Desktop\boas_compras\djangoProject\boas_compras\app\templates" />
     </key>
   </component>
@@ -128,14 +134,7 @@
       <option name="project" value="LOCAL" />
       <updated>1675191562569</updated>
     </task>
-    <task id="LOCAL-00005" summary="aggregate values">
-      <created>1676574665238</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1676574665238</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -153,7 +152,6 @@
     <MESSAGE value="organizando a lista de preços" />
     <MESSAGE value="first commint" />
     <MESSAGE value="update" />
-    <MESSAGE value="aggregate values" />
-    <option name="LAST_COMMIT_MESSAGE" value="aggregate values" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>

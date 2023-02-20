@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {%load static%}
+
+    {% load bootstrap5 %}
     <meta charset="UTF-8">
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <link rel="stylesheet" href="{% static 'css/cadastro_valor.css' %}">
     <title>Valor</title>
 </head>
 <body>
   <form method="POST">{%csrf_token%}
-    {{form2.as_p}}
+    <div class="formulario">
+      {{form2.as_p}}
+        <div class="button">
           <button type="submit">Enviar</button>
-          <button type="button">Cancelar</button>
+          <button type="button"><a href="{% url 'lista' %}">Cancelar</a></button>
+        </div>
+    </div>
   </form>
+
 </body>
 </html>

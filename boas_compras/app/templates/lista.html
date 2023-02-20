@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
+    {% load bootstrap5 %}
     <meta charset="UTF-8">
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <link rel="stylesheet" href="{% static 'css/lista.css' %}">
     <title>Lista</title>
 </head>
 <body>
-    <a href="{%url 'delete_produto_all'%}">Deletar Lista</a>
-    <a href="{%url 'cadastro'%}">Novo item</a>
+    <div class="links">
+        <a href="{%url 'inicio'%}">Incio</a>
+        <a href="{%url 'cadastro'%}">Novo item</a>
+        <a href="{%url 'delete_produto_all'%}">Deletar Lista</a>
+
+    </div>
     <div class="lista">
-        <ol>
-            {%for lista in lista%}
-                 <li>
-                     <a href="{%url 'delete_produto' lista.id%}">Delete</a>
-                     <input type="checkbox">
-                     <a href="{%url 'update_produto' lista.id %}">{{lista}}</a><br>
-                     <a href="{%url 'cadastro_valor'%}">Valor:</a>
-                 </li>
+        <div>
+            <ol>
+                {%for lista in lista%}
+                     <li>
+                         <a href="{%url 'delete_produto' lista.id%}">Delete</a>
+                         <input type="checkbox">
+                         <a href="{%url 'update_produto' lista.id %}">{{lista}}</a><br>
+                         <a href="{%url 'cadastro_valor'%}">Valor:</a>
+                     </li>
+
             {%endfor%}
           </ol>
-
-        <ol>
-            {%for valor in valor%}
-                <li><a href="{%url 'delete_valor' valor.id%}">--></a>R${{valor.valor}}</li><br>
-            {%endfor%}
-        </ol>
+        </div>
+        <div>
+            <ul>
+                {%for valor in valor%}
+                    <li><a href="{%url 'delete_valor' valor.id%}">--></a>R${{valor.valor}}</li><br>
+                {%endfor%}
+            </ul>
+        </div>
     </div>
-<p>-----------------------------------------------------------------</p>
 
-        R${{total.total|floatformat}}
 
+    <div class="total">
+        R${{total.total|floatformat:2}}
+    </div>
 </body>
 </html>

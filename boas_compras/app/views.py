@@ -1,8 +1,8 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render,redirect
+from django.http import HttpResponse
 from .models import Produto,Valor
 from django.db.models import Sum
 from django.db.models import DecimalField
-from django.db.models.functions import Cast
 
 from .forms import ProdutoForm, ValorForm
 # Create your views here.
@@ -13,8 +13,7 @@ def lista(request):
     lista = Produto.objects.all()
     valor = Valor.objects.all()
     total = Valor.objects.aggregate(total=Sum('valor'))
-
-    return render(request, 'lista.html', {'lista': lista, 'valor': valor, 'total':total})
+    return render(request, 'lista.html', {'lista': lista, 'valor': valor, 'total': total})
 
 
 def cadastro(request):
@@ -47,9 +46,10 @@ def delete_produto(request, id):
 
 def delete_produto_all(request):
     lista = Produto.objects.all()
-
+    valor = Valor.objects.all()
     if request.method == 'POST':
         lista.delete()
+        valor.delete()
         return redirect('lista')
     return render(request, 'cadastro.html')
 '''---------------------------------------------'''
@@ -69,4 +69,9 @@ def delete_valor(request, id):
         return redirect('lista')
     return render(request, 'cadastro_valor.html')
 
-
+def soma(request):
+    valor = Valor.objects.all()
+    total = 0.00
+    for valor in valor:
+        total += valor
+    return HttpResponse(request, 'lista.html', {'total': total})
